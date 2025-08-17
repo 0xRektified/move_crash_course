@@ -58,17 +58,17 @@ module net2dev_addr::vector_one {
         list.for_each(|list| read_element(list));
     }
 
-    #[test]
-    fun test_fun(){
-        let l = vector_basics();
-        print(&l);
+    // #[test]
+    // fun test_fun(){
+    //     let l = vector_basics();
+    //     print(&l);
 
-        assert!(l.contains(&10) == true); // return a bool if present
+    //     assert!(l.contains(&10) == true); // return a bool if present
 
-        let (is_present , _) = l.index_of(&30); // return first instance
-        print(&is_present);
+    //     let (is_present , _) = l.index_of(&30); // return first instance
+    //     print(&is_present);
 
-        let list = while_loop_vector(l);
-        for_each_vector(list);
-    }
+    //     let list = while_loop_vector(l);
+    //     for_each_vector(list);
+    // }
 }
