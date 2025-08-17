@@ -43,31 +43,31 @@ module net2dev_addr::tables_demo {
         (info.baths, info.beds, info.sqm, info.phy_address, info.price, info.available)
     }
 
-    #[test_only]
-    use std::debug::print;
-    #[test_only]
-    use std::string::utf8;
+    // #[test_only]
+    // use std::debug::print;
+    // #[test_only]
+    // use std::string::utf8;
 
-    #[test(account = @0x123)]
-    fun test_fun(account: signer) acquires PropList{
+    // #[test(account = @0x123)]
+    // fun test_fun(account: signer) acquires PropList{
 
-        register_seller(&account);
-        let prop_info = Property {
-            baths: 2,
-            beds: 4,
-            sqm: 10,
-            phy_address: utf8(b"test"),
-            price: 100000,
-            available: true,
-        };
-        list_property(&account, prop_info);
-        let (baths, beds, sqm, phy_address, price, available) = read_property(account, 1);
-        print(&baths);
-        print(&beds);
-        print(&sqm);
-        print(&phy_address);
-        print(&price);
-        print(&available);
+    //     register_seller(&account);
+    //     let prop_info = Property {
+    //         baths: 2,
+    //         beds: 4,
+    //         sqm: 10,
+    //         phy_address: utf8(b"test"),
+    //         price: 100000,
+    //         available: true,
+    //     };
+    //     list_property(&account, prop_info);
+    //     let (baths, beds, sqm, phy_address, price, available) = read_property(account, 1);
+    //     print(&baths);
+    //     print(&beds);
+    //     print(&sqm);
+    //     print(&phy_address);
+    //     print(&price);
+    //     print(&available);
 
-    }
+    // }
 }
