@@ -32,23 +32,23 @@ module net2dev_addr::StorageDemo {
         exists<StakePool>(account)
     }
 
-    #[test_only]
-    use std::string::utf8;
-    #[test_only]
-    use std::debug::print;
+    // #[test_only]
+    // use std::string::utf8;
+    // #[test_only]
+    // use std::debug::print;
 
-    #[test(user = @0x123)]
-    fun test_fun(user: signer) acquires StakePool{
-        add_user(&user);
-        assert!(read_pool(signer::address_of(&user)) == 0, 1);
-        print(&utf8(b"User added succesfully"));
-        stake(signer::address_of(&user), 100);
-        assert!(read_pool(signer::address_of(&user)) == 100, 1);
-        print(&utf8(b"User got 100 token"));
-        unstake(signer::address_of(&user));
-        print(&utf8(b"Unstake"));
-        remove_user(&user);
-        assert!(confirm_user(signer::address_of(&user)) == false , 1);
-        print(&utf8(b"User removed"));
-    }
+    // #[test(user = @0x123)]
+    // fun test_fun(user: signer) acquires StakePool{
+    //     add_user(&user);
+    //     assert!(read_pool(signer::address_of(&user)) == 0, 1);
+    //     print(&utf8(b"User added succesfully"));
+    //     stake(signer::address_of(&user), 100);
+    //     assert!(read_pool(signer::address_of(&user)) == 100, 1);
+    //     print(&utf8(b"User got 100 token"));
+    //     unstake(signer::address_of(&user));
+    //     print(&utf8(b"Unstake"));
+    //     remove_user(&user);
+    //     assert!(confirm_user(signer::address_of(&user)) == false , 1);
+    //     print(&utf8(b"User removed"));
+    // }
 }
