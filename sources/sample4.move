@@ -47,32 +47,32 @@ module net2dev_addr::Sample4 {
         print(&utf8(b"correct"))
     }
 
-    // #[test]
-    // fun test_for_loop(){
-    //     let result = sample_for_loop(10);
-    //     print(&result);
-    // }
+    #[test]
+    fun test_for_loop(){
+        let result = sample_for_loop(10);
+        print(&result);
+    }
 
-    // #[test]
-    // fun test_while_loop(){
-    //     let result = sample_while_loop(10);
-    //     print(&result);
-    // }
+    #[test]
+    fun test_while_loop(){
+        let result = sample_while_loop(10);
+        print(&result);
+    }
 
-    // #[test]
-    // fun test_loop(){
-    //     let result = sample_loop(10);
-    //     print(&result);
-    // }
+    #[test]
+    fun test_loop(){
+        let result = sample_loop(10);
+        print(&result);
+    }
 
-    // #[test]
-    // #[expected_failure]
-    // fun test_abort_error(){
-    //     sample_abort_error(utf8(b"net22dev"));
-    // }
+    #[test]
+    #[expected_failure]
+    fun test_abort_error(){
+        sample_abort_error(utf8(b"net22dev"));
+    }
 
-    // #[test]
-    // fun test_assert_error(){
-    //     sample_assert_error(utf8(b"net2dev"));
-    // }
+    #[test]
+    fun test_assert_error(){
+        sample_assert_error(utf8(b"net2dev"));
+    }
 }

@@ -44,26 +44,26 @@ module net2dev_addr::Sample8 {
         coin2 - new_n2dr
     }
 
-    // #[test_only]
-    // use std::debug::print;
-    // #[test_only]
-    // use std::string::utf8;
+    #[test_only]
+    use std::debug::print;
+    #[test_only]
+    use std::string::utf8;
 
-    // #[test]
-    // fun test_swap(){
-    //     let swap_amount = 495; //USDT
-    //     let (pool1, pool2, name) = get_supply(N2DR);
-    //     print(&utf8(b"Swap USDT for:"));
-    //     print(&utf8(name));
+    #[test]
+    fun test_swap(){
+        let swap_amount = 495; //USDT
+        let (pool1, pool2, name) = get_supply(N2DR);
+        print(&utf8(b"Swap USDT for:"));
+        print(&utf8(name));
 
-    //     let price_before = token_price(pool1 ,pool2);
-    //     print(&price_before);
-    //     let receive = calculate_swap(pool1, pool2, swap_amount);
-    //     print(&receive);
+        let price_before = token_price(pool1 ,pool2);
+        print(&price_before);
+        let receive = calculate_swap(pool1, pool2, swap_amount);
+        print(&receive);
 
-    //     let coin1_after = pool1 + swap_amount;
-    //     let coin2_after = pool2 - receive;
-    //     let price_after = token_price(coin1_after ,coin2_after);
-    //     print(&price_after);
-    // }
+        let coin1_after = pool1 + swap_amount;
+        let coin2_after = pool2 - receive;
+        let price_after = token_price(coin1_after ,coin2_after);
+        print(&price_after);
+    }
 }

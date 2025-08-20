@@ -26,10 +26,10 @@ module net2dev_addr::RefDemo {
         re_assign(value_a,value_b);
     }
 
-    // #[test]
-    // fun test_fuf(){
-    //     scenario_1();
-    //     scenario_2();
-    //     scenario_3();
-    // }
+    #[test]
+    fun test_fuf(){
+        scenario_1();
+        scenario_2();
+        scenario_3();
+    }
 }

@@ -13,9 +13,9 @@ module net2dev_addr::SignerDemo{
         print(address_val);
     }
 
-    // // #[test(account = @0x123)] //Wrong
-    // #[test(account = @net2dev_addr)]
-    // fun test_function(account: signer){
-    //     check_owner(account);
-    // }
+    // #[test(account = @0x123)] //Wrong
+    #[test(account = @net2dev_addr)]
+    fun test_function(account: signer){
+        check_owner(account);
+    }
 }

@@ -9,14 +9,14 @@ module net2dev_addr::Sample2 {
             (false, 0)
         }
     }
-    // #[test_only]
-    // use std::debug::print;
+    #[test_only]
+    use std::debug::print;
 
-    // #[test]
-    // fun test_fun(){
-    //     let (result, nbr) = confirm_value(1);
-    //     print(&MY_ADDR);
-    //     print(&result);
-    //     print(&nbr);
-    // }
+    #[test]
+    fun test_fun(){
+        let (result, nbr) = confirm_value(1);
+        print(&MY_ADDR);
+        print(&result);
+        print(&nbr);
+    }
 }

@@ -13,9 +13,9 @@ module net2dev_addr::Sample1 {
         value_id
     }
 
-    // #[test]
-    // fun test_function() {
-    //     let id_value= set_value();
-    //     print(&id_value);
-    // }
+    #[test]
+    fun test_function() {
+        let id_value= set_value();
+        print(&id_value);
+    }
 }

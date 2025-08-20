@@ -36,31 +36,31 @@ module net2dev_addr::Sample5{
         }
     }
 
-    // #[test_only]
-    // use std::debug::print;
-    // #[test]
-    // fun test_arythmetic(){
-    //     let result = arythmetic_operations(2 ,1 , ADD);
-    //     print(&result);
-    //     result = arythmetic_operations(2 ,1 , SUB);
-    //     print(&result);
-    //     result = arythmetic_operations(2 ,1 , MUL);
-    //     print(&result);
-    //     result = arythmetic_operations(2 ,1 , DIV);
-    //     print(&result);
-    //     result = arythmetic_operations(2 ,1 , MOD);
-    //     print(&result);
-    // }
+    #[test_only]
+    use std::debug::print;
+    #[test]
+    fun test_arythmetic(){
+        let result = arythmetic_operations(2 ,1 , ADD);
+        print(&result);
+        result = arythmetic_operations(2 ,1 , SUB);
+        print(&result);
+        result = arythmetic_operations(2 ,1 , MUL);
+        print(&result);
+        result = arythmetic_operations(2 ,1 , DIV);
+        print(&result);
+        result = arythmetic_operations(2 ,1 , MOD);
+        print(&result);
+    }
 
-    // #[test]
-    // fun test_equality(){
-    //     let result = equality_operations(2 ,1 , HIGHER);
-    //     print(&result);
-    //     result = equality_operations(2 ,1 , LOWER);
-    //     print(&result);
-    //     result = equality_operations(2 , 2, HIGHER_EQ);
-    //     print(&result); 
-    //     result = equality_operations(2 ,2 , LOWER_EQ);
-    //     print(&result);
-    // }
+    #[test]
+    fun test_equality(){
+        let result = equality_operations(2 ,1 , HIGHER);
+        print(&result);
+        result = equality_operations(2 ,1 , LOWER);
+        print(&result);
+        result = equality_operations(2 , 2, HIGHER_EQ);
+        print(&result); 
+        result = equality_operations(2 ,2 , LOWER_EQ);
+        print(&result);
+    }
 }

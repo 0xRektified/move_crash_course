@@ -23,33 +23,33 @@ module net2dev_addr::Sample6{
         }
     }
 
-    // #[test_only]
-    // use std::debug::print;
+    #[test_only]
+    use std::debug::print;
 
-    // #[test]
-    // fun test_or(){
-    //     let re =bitwise_or(7, 4);
-    //     print(&re);
-    // }
+    #[test]
+    fun test_or(){
+        let re =bitwise_or(7, 4);
+        print(&re);
+    }
 
-    // #[test]
-    // fun test_and(){
-    //     let re =bitwise_and(7, 4);
-    //     print(&re);
-    // }
+    #[test]
+    fun test_and(){
+        let re =bitwise_and(7, 4);
+        print(&re);
+    }
 
-    // #[test]
-    // fun test_xor(){
-    //     let re =bitwise_xor(7, 4);
-    //     print(&re);
-    // }
+    #[test]
+    fun test_xor(){
+        let re =bitwise_xor(7, 4);
+        print(&re);
+    }
 
-    // #[test]
-    // fun test_bitshift(){
-    //     let re = bitshift(7, 2, RIGHT);
-    //     print(&re);
-    //     let re = bitshift(7, 2, LEFT);
-    //     print(&re);
-    // }
+    #[test]
+    fun test_bitshift(){
+        let re = bitshift(7, 2, RIGHT);
+        print(&re);
+        let re = bitshift(7, 2, LEFT);
+        print(&re);
+    }
 
 }

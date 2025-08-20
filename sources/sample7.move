@@ -17,9 +17,9 @@ address net2dev_addr {
             let cast_math: u128 = ((price_u128 as u64) + (price_w_fee as u64)) as u128;
             print(&cast_math)
         }
-        // #[test]
-        // fun test_calculate_swap(){
-        //     calculate_swap();
-        // }
+        #[test]
+        fun test_calculate_swap(){
+            calculate_swap();
+        }
     }
 } 

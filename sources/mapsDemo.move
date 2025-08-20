@@ -20,19 +20,19 @@ module net2dev_addr::MapsDemo {
         return my_map
     }
 
-    // #[test_only]
-    // use std::debug::print;
+    #[test_only]
+    use std::debug::print;
 
-    // #[test]
-    // fun test_fun(){
-    //     let my_map = create_map();
-    //     my_map = remove_from_map(my_map, 2);
-    //     let length = check_map_len((my_map));
-    //     print(&length);
-    //     let country = simple_map::borrow(
-    //             &mut my_map,
-    //             &3
-    //         );
-    //     print(country);
-    // }
+    #[test]
+    fun test_fun(){
+        let my_map = create_map();
+        my_map = remove_from_map(my_map, 2);
+        let length = check_map_len((my_map));
+        print(&length);
+        let country = simple_map::borrow(
+                &mut my_map,
+                &3
+            );
+        print(country);
+    }
 }

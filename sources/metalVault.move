@@ -109,17 +109,17 @@ module net2dev_addr::metalVault {
         }
     }
 
-    // #[test(client1= @0x123)]
-    // fun fun_test(client1: signer) acquires MetalVault{
-    //     init_client(&client1);
-    //     assert!(exists<MetalVault>(signer::address_of(&client1)) == true, 1);
-    //     get_client_balance(signer::address_of(&client1), GOLD);
-    //     let res = add_values(signer::address_of(&client1), utf8(b"UAE"), GOLD, 100, 57);
-    //     let res = add_values(signer::address_of(&client1), utf8(b"UAE"), GOLD, 5, 28);
-    //     print(&res);
-    //     print(&utf8(b"---------------"));
-    //     get_client_balance(signer::address_of(&client1), GOLD);
+    #[test(client1= @0x123)]
+    fun fun_test(client1: signer) acquires MetalVault{
+        init_client(&client1);
+        assert!(exists<MetalVault>(signer::address_of(&client1)) == true, 1);
+        get_client_balance(signer::address_of(&client1), GOLD);
+        let res = add_values(signer::address_of(&client1), utf8(b"UAE"), GOLD, 100, 57);
+        let res = add_values(signer::address_of(&client1), utf8(b"UAE"), GOLD, 5, 28);
+        print(&res);
+        print(&utf8(b"---------------"));
+        get_client_balance(signer::address_of(&client1), GOLD);
 
-    // }
+    }
 
 }
